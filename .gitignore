@@ -214,3 +214,11 @@ replay_pid*
 # vscode
 *.vscode*
 *bin*
+
+#IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+*.bak
+*.orig
