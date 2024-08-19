@@ -4,12 +4,12 @@ import "fmt"
 
 const SCALING_FACTOR = 1000000
 
-func main() {
-	numbers := []int{1, 2, 3, 4}
-	printFirstItemThenFirstHalfThenSayHiXTimes(numbers)
-}
-
 /*
+Big O Rule 2: Remove Constants
+
+O(2n) => O(n)
+O(n + 10) => O(n)
+
 printFirstItemThenFirstHalfThenSayHiXTimes prints the first item of the given numbers,
 followed by printing the first half of the numbers, and then saying "hi" by SCALING_FACTOR times.
 
@@ -39,4 +39,9 @@ func printFirstItemThenFirstHalfThenSayHiXTimes(numbers []int) {
 	for i := 0; i < SCALING_FACTOR; i++ {
 		fmt.Println("hi")
 	}
+}
+
+func main() {
+	numbers := []int{1, 2, 3, 4}
+	printFirstItemThenFirstHalfThenSayHiXTimes(numbers)
 }
